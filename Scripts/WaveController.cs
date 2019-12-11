@@ -34,7 +34,7 @@ public class WaveController : MonoBehaviour
     [SerializeField] public List<Transform> SpawnpointList = new List<Transform>();
     [SerializeField] public Queue<Transform> SpawnpointQueue = new Queue<Transform>();
 
-    public void FillSpawnpoints()
+    public void GetSpawnpoints()
     {
       for (int i = 0; i < WaveFormationObject.transform.childCount; i++)
       {
@@ -50,7 +50,7 @@ public class WaveController : MonoBehaviour
   {
     foreach (WaveFormation waveFormation in WaveFormations)
     {
-      waveFormation.FillSpawnpoints();
+      waveFormation.GetSpawnpoints();
     }
   }
 }
