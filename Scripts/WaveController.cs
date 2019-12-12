@@ -18,6 +18,7 @@ public class WaveController : MonoBehaviour
   [SerializeField] private int _numberOfWaves;
   public int NumberOfWaves => _numberOfWaves;
 
-  public List<WaveFormation> WaveFormations = new List<WaveFormation>();
+  private int _currentWaveIndex;
+  public int CurrentWaveIndex => _currentWaveIndex;
 
 }

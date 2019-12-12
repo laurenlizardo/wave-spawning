@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class EnemyManager : MonoBehaviour
 {
@@ -21,5 +22,26 @@ public class EnemyManager : MonoBehaviour
   public void IncrementEnemyCount(int increment)
   {
     _enemyCount += increment;
+  }
+
+  public GameObject EnemyA;
+  public GameObject EnemyB;
+  public GameObject EnemyC;
+
+  private void Start()
+  {
+    CreateSpawnList(EnemyA);
+    CreateSpawnList(EnemyB);
+    CreateSpawnList(EnemyC);
+  }
+
+  private List<GameObject> CreateSpawnList(GameObject prefab)
+  {
+    List<GameObject> spawnList = new List<GameObject>();
+    for (int i = 0; i < _enemyCount; i++)
+    {
+      spawnList.Add(prefab);
+    }
+    return spawnList;
   }
 }
