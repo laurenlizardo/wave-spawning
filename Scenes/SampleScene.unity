@@ -193,7 +193,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: -0.03515625, y: 0.5, z: 2, w: 2.5}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -209,7 +209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &108287846
 GameObject:
@@ -221,7 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 108287847}
   m_Layer: 0
-  m_Name: Spawnpoint8
+  m_Name: SP8
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165622610}
   m_Layer: 0
-  m_Name: Spawnpoint3
+  m_Name: SP3
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -280,8 +280,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 178403152}
+  - component: {fileID: 178403153}
   m_Layer: 0
-  m_Name: WaveFormation2
+  m_Name: WFBOX01
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -303,6 +304,49 @@ Transform:
   - {fileID: 1585138457}
   - {fileID: 762352041}
   m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &178403153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178403151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2931747dbb096436cbdf0ae9e7b95b13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnpointList: []
+--- !u!1 &225880757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 225880758}
+  m_Layer: 0
+  m_Name: '---- WAVE FORMATIONS'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &225880758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225880757}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &321492039
@@ -315,7 +359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 321492040}
   m_Layer: 0
-  m_Name: Spawnpoint1
+  m_Name: SP1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -366,12 +410,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _numberOfWaves: 0
   WaveFormations:
-  - WaveFormationObject: {fileID: 1775646708}
-    SpawnpointList: []
-  - WaveFormationObject: {fileID: 178403151}
-    SpawnpointList: []
-  - WaveFormationObject: {fileID: 686240502}
-    SpawnpointList: []
+  - {fileID: 1775646710}
+  - {fileID: 178403153}
+  - {fileID: 686240504}
 --- !u!4 &335416323
 Transform:
   m_ObjectHideFlags: 0
@@ -384,7 +425,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &435949487
 GameObject:
@@ -396,7 +437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435949488}
   m_Layer: 0
-  m_Name: Spawnpoint1
+  m_Name: SP1
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -426,7 +467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589191548}
   m_Layer: 0
-  m_Name: Spawnpoint2
+  m_Name: SP2
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -456,7 +497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 674658207}
   m_Layer: 0
-  m_Name: Spawnpoint6
+  m_Name: SP6
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -485,8 +526,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 686240503}
+  - component: {fileID: 686240504}
   m_Layer: 0
-  m_Name: WaveFormation3
+  m_Name: WFCROSSBOX01
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -512,8 +554,21 @@ Transform:
   - {fileID: 1240870857}
   - {fileID: 108287847}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &686240504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686240502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2931747dbb096436cbdf0ae9e7b95b13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnpointList: []
 --- !u!1 &762352040
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 762352041}
   m_Layer: 0
-  m_Name: Spawnpoint4
+  m_Name: SP4
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -625,7 +680,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
 --- !u!1 &815821887
 GameObject:
@@ -637,7 +692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 815821888}
   m_Layer: 0
-  m_Name: Spawnpoint3
+  m_Name: SP3
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -667,7 +722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914491626}
   m_Layer: 0
-  m_Name: Spawnpoint5
+  m_Name: SP5
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -687,6 +742,36 @@ Transform:
   m_Father: {fileID: 686240503}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1034697092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034697093}
+  m_Layer: 0
+  m_Name: '---- SCENE OBJECTS'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1034697093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034697092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1147996003
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,7 +782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1147996004}
   m_Layer: 0
-  m_Name: Spawnpoint2
+  m_Name: SP2
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -727,7 +812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1240870857}
   m_Layer: 0
-  m_Name: Spawnpoint7
+  m_Name: SP7
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -837,7 +922,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1331481171
 GameObject:
@@ -849,7 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1331481172}
   m_Layer: 0
-  m_Name: Spawnpoint4
+  m_Name: SP4
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -879,7 +964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1357481691}
   m_Layer: 0
-  m_Name: Spawnpoint4
+  m_Name: SP4
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -909,7 +994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1585138457}
   m_Layer: 0
-  m_Name: Spawnpoint3
+  m_Name: SP3
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -939,7 +1024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1616865164}
   m_Layer: 0
-  m_Name: Spawnpoint2
+  m_Name: SP2
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -969,7 +1054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1637920297}
   m_Layer: 0
-  m_Name: Spawnpoint1
+  m_Name: SP1
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -998,8 +1083,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1775646709}
+  - component: {fileID: 1775646710}
   m_Layer: 0
-  m_Name: WaveFormation1
+  m_Name: WFCROSS01
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1021,5 +1107,48 @@ Transform:
   - {fileID: 165622610}
   - {fileID: 1357481691}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1775646710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775646708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2931747dbb096436cbdf0ae9e7b95b13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnpointList: []
+--- !u!1 &1966350522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1966350523}
+  m_Layer: 0
+  m_Name: '---- MANAGERS/CONTROLLERS'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1966350523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966350522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
