@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e6c857eafdf4485a1c2b68d80ae908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 1372099071403688020, guid: 2f25e2d3d77124f45a334e6b368f6a9a, type: 3}
+  _prefab: {fileID: 5272393706763757245, guid: 2f25e2d3d77124f45a334e6b368f6a9a, type: 3}
   _poolCount: 10
   _isPoolParent: 1
   Spawnpoint: {fileID: 0}
