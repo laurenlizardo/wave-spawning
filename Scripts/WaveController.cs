@@ -18,6 +18,20 @@ public class WaveController : MonoBehaviour
   [SerializeField] private int _numberOfWaves;
   public int NumberOfWaves => _numberOfWaves;
 
-  public List<WaveFormation> WaveFormations = new List<WaveFormation>();
+  private int _currentWaveIndex;
+  public int CurrentWaveIndex => _currentWaveIndex;
 
+  public List<Wave> Waves = new List<Wave>();
+
+  public int NumberOfEnemies => Enemy.EnemyCount;
+
+  private void ActivateWave()
+  {
+
+  }
+
+  private void Update()
+  {
+    if (Input.GetKey(KeyCode.Space)) Debug.Log(NumberOfEnemies);
+  }
 }
