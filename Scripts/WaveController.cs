@@ -21,4 +21,5 @@ public class WaveController : MonoBehaviour
   private int _currentWaveIndex;
   public int CurrentWaveIndex => _currentWaveIndex;
 
+  public List<Wave> Waves = new List<Wave>();
 }
