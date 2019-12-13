@@ -21,14 +21,9 @@ public class WaveController : MonoBehaviour
   private int _currentWaveIndex;
   public int CurrentWaveIndex => _currentWaveIndex;
 
-  //public List<Wave> Waves = new List<Wave>();
+  public List<EnemyWave> EnemyWaves = new List<EnemyWave>();
 
   public int NumberOfEnemies => Enemy.EnemyCount;
-
-  private void ActivateWave()
-  {
-
-  }
 
   private void Update()
   {
