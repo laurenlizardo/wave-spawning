@@ -15,10 +15,10 @@ MonoBehaviour:
   WaveFormation: {fileID: 2573337903700709545, guid: f19b0b3ddd93444e9a6dcfb7d88a2571,
     type: 3}
   WaveElements:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5272393706763757245, guid: 2f25e2d3d77124f45a334e6b368f6a9a, type: 3}
+  - {fileID: 1313696537352361859, guid: 11cb27f97b72d4bee88e39cdd0b372d0, type: 3}
+  - {fileID: 1313696537352361859, guid: 11cb27f97b72d4bee88e39cdd0b372d0, type: 3}
+  - {fileID: 5272393706763757245, guid: 2f25e2d3d77124f45a334e6b368f6a9a, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
