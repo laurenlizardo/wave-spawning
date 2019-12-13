@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29b30c2c0740b47b487ff1feb8557361, type: 3}
-  m_Name: EnemyWaveTest01
+  m_Name: EnemyWaveTest02
   m_EditorClassIdentifier: 
-  WaveFormation: {fileID: 2573337903700709545, guid: f19b0b3ddd93444e9a6dcfb7d88a2571,
+  WaveFormation: {fileID: 131574642331386648, guid: 650025ea9d7834ea3a230bd3a846fa8a,
     type: 3}
   WaveElements:
   - {fileID: 0}

@@ -15,20 +15,14 @@ public class WaveController : MonoBehaviour
   }
 #endregion
 
-  [SerializeField] private int _numberOfWaves;
-  public int NumberOfWaves => _numberOfWaves;
+  [SerializeField] private int _numberOfWaves => EnemyWaves.Count;
 
   private int _currentWaveIndex;
   public int CurrentWaveIndex => _currentWaveIndex;
 
-  //public List<Wave> Waves = new List<Wave>();
+  public List<EnemyWave> EnemyWaves = new List<EnemyWave>();
 
   public int NumberOfEnemies => Enemy.EnemyCount;
-
-  private void ActivateWave()
-  {
-
-  }
 
   private void Update()
   {
