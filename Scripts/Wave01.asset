@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Wave01
   m_EditorClassIdentifier: 
   NumberOfEnemies: 0
-  WaveEnemies: []
-  Formation: {fileID: 0}
+  WaveEnemies:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  WaveFormation: {fileID: 0}

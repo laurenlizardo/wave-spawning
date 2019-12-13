@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+  public static int EnemyCount;
+
   private void OnEnable()
   {
-    EnemyManager.Instance.IncrementEnemyCount(1);
+    EnemyCount++;
   }
 
   private void OnDisable()
   {
-    EnemyManager.Instance.IncrementEnemyCount(-1);
+    EnemyCount--;
   }
 }

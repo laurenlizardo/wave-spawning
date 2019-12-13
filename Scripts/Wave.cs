@@ -8,5 +8,5 @@ public class Wave : ScriptableObject
   public int NumberOfEnemies;
   public List<Enemy> WaveEnemies = new List<Enemy>();
 
-  public WaveFormation Formation;
+  public WaveFormation WaveFormation;
 }
