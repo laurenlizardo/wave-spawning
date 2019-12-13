@@ -35,6 +35,9 @@ public class WaveController : MonoBehaviour
 
   private void SpawnWave(EnemyWave wave)
   {
-    for (int i = 0; i < wave.WaveElements.Count; i++) Instantiate(wave.WaveElements[i]);
+    for (int i = 0; i < wave.WaveElements.Count; i++)
+    {
+      Instantiate(wave.WaveElements[i], wave.Spawnpoints[i].position, Quaternion.identity); // Works as long as the enemy count doesn't exceed spawnpoints
+    }
   }
 }
