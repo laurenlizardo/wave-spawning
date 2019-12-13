@@ -1,4 +1,4 @@
-public class EnemyCool : ObjectPool<EnemyC>
+public class EnemyCPool : ObjectPool<EnemyC>
 {
   private void Start()
   {
