@@ -15,8 +15,7 @@ public class WaveController : MonoBehaviour
   }
 #endregion
 
-  [SerializeField] private int _numberOfWaves;
-  public int NumberOfWaves => _numberOfWaves;
+  [SerializeField] private int _numberOfWaves => EnemyWaves.Count;
 
   private int _currentWaveIndex;
   public int CurrentWaveIndex => _currentWaveIndex;
