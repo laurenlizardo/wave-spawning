@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Create New Wave", fileName = "New Wave")]
-public class Wave : ScriptableObject
+public abstract class Wave<T> : ScriptableObject where T : Component
 {
-  public int NumberOfEnemies;
-  public List<Enemy> WaveEnemies = new List<Enemy>();
+  public int NumberOfWaveElements;
+  public List<T> WaveElements = new List<T>();
 
   public WaveFormation WaveFormation;
 }
