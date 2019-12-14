@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System;
+using System.Collections;
 using System.Collections.Generic;
 
 public class WaveController : MonoBehaviour
@@ -28,17 +28,19 @@ public class WaveController : MonoBehaviour
   {
     if (Input.GetKeyDown(KeyCode.Space))
     {
-      SpawnWave(EnemyWaves[_currentWaveIndex]);
+      StartCoroutine(SpawnWave(EnemyWaves[_currentWaveIndex]));
       Debug.Log(NumberOfEnemies);
     } 
   }
 
-  private void SpawnWave(EnemyWave wave)
+  private IEnumerator SpawnWave(EnemyWave wave)
   {
     for (int i = 0; i < wave.WaveElements.Count; i++)
     {
       GameObject obj = wave.WaveElements[i].NextPoolObject();
       obj.SetActive(true);
+
+      yield return new WaitForSeconds(wave.SpawnDelay);
     }
   }
 }
