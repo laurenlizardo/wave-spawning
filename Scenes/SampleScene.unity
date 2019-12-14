@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 335416323}
   - component: {fileID: 335416322}
   m_Layer: 0
-  m_Name: EnemyWaveController
+  m_Name: TestEnemyWaveController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -267,13 +267,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 335416321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6fa0210c60cd4656ae49af300f5e93d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2799f4279b1ae4c50ab1415c63fcb1c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - {fileID: 11400000, guid: 2d511dc0574ea43e1bb5e9c7d1e12de9, type: 2}
-  - {fileID: 11400000, guid: b7507e403930547b8aa259e6a4dada7f, type: 2}
-  - {fileID: 11400000, guid: ac8a251ddd3da46beb6805f3787596e9, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &335416323
 Transform:
   m_ObjectHideFlags: 0
@@ -533,7 +535,7 @@ PrefabInstance:
     - target: {fileID: 3039645849094869414, guid: 9f55aebfe0cc74117970335edca2bd3a,
         type: 3}
       propertyPath: m_Name
-      value: EnemyCPool
+      value: TestEnemyCPool
       objectReference: {fileID: 0}
     - target: {fileID: 3039645849094869412, guid: 9f55aebfe0cc74117970335edca2bd3a,
         type: 3}
@@ -607,7 +609,7 @@ PrefabInstance:
     - target: {fileID: 4802199064232254682, guid: 2987e6149562145e6a01302d84201c16,
         type: 3}
       propertyPath: m_Name
-      value: EnemyBPool
+      value: TestEnemyBPool
       objectReference: {fileID: 0}
     - target: {fileID: 4802199064232254680, guid: 2987e6149562145e6a01302d84201c16,
         type: 3}
@@ -681,7 +683,7 @@ PrefabInstance:
     - target: {fileID: 7842228841631611157, guid: dad37db1a582647bcbb5bf7c2dfddfd0,
         type: 3}
       propertyPath: m_Name
-      value: EnemyAPool
+      value: TestEnemyAPool
       objectReference: {fileID: 0}
     - target: {fileID: 7842228841631611159, guid: dad37db1a582647bcbb5bf7c2dfddfd0,
         type: 3}
