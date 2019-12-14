@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
+public abstract class TestEnemy : MonoBehaviour
 {
   public static int EnemyCount;
 

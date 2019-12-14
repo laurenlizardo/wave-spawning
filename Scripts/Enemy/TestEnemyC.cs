@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyC : Enemy
+public class TestEnemyC : TestEnemy
 {
   public override GameObject NextPoolObject()
   {
