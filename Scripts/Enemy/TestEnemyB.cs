@@ -4,6 +4,6 @@ public class TestEnemyB : TestEnemy
 {
   public override GameObject NextPoolObject()
   {
-    return EnemyBPool.Instance.NextPoolObject().gameObject;
+    return TestEnemyBPool.Instance.NextPoolObject().gameObject;
   }
 }
