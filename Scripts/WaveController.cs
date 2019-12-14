@@ -38,6 +38,8 @@ public class WaveController : MonoBehaviour
     for (int i = 0; i < wave.WaveElements.Count; i++)
     {
       GameObject obj = wave.WaveElements[i].NextPoolObject();
+      obj.transform.position = wave.Spawnpoints[i].transform.position;
+      obj.transform.rotation = Quaternion.identity;
       obj.SetActive(true);
 
       yield return new WaitForSeconds(wave.SpawnDelay);
