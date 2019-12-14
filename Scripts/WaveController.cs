@@ -37,7 +37,9 @@ public class WaveController : MonoBehaviour
   {
     for (int i = 0; i < wave.WaveElements.Count; i++)
     {
-      Instantiate(wave.WaveElements[i], wave.Spawnpoints[i].position, Quaternion.identity); // Works as long as the enemy count doesn't exceed spawnpoints
+      //Instantiate(wave.WaveElements[i], wave.Spawnpoints[i].position, Quaternion.identity); // Works as long as the enemy count doesn't exceed spawnpoints
+      
+      // Access the pool that wave.WaveElements[i] belongs to and dequeue() from there
     }
   }
 }
