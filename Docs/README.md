@@ -1,7 +1,7 @@
 # enemy-wave-system
 
 ## Requirements
-* Generic Object Pooling Repo - www.github.com/laurenlizardo/generic-object-pooling
+* Object Pooling Repo - www.github.com/laurenlizardo/object-pooling
 
 ## Setup
 
