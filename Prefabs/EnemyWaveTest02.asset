@@ -14,14 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaveFormation: {fileID: 131574642331386648, guid: 650025ea9d7834ea3a230bd3a846fa8a,
     type: 3}
+  SpawnDelay: 0
   WaveElements:
   - {fileID: 360555096572577936, guid: f9401d270acad4296b2761f679c6e8b5, type: 3}
   - {fileID: 360555096572577936, guid: f9401d270acad4296b2761f679c6e8b5, type: 3}
   - {fileID: 360555096572577936, guid: f9401d270acad4296b2761f679c6e8b5, type: 3}
   - {fileID: 360555096572577936, guid: f9401d270acad4296b2761f679c6e8b5, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
