@@ -2,7 +2,7 @@ public class TestEnemyBPool : GenericObjectPool<TestEnemyB>
 {
   private void Start()
   {
-    FillPool(_poolCount);
+    AddObjectsToPool(_poolCount);
     if (_isPoolParent) SetPoolParent(this.gameObject);
   }
 }
