@@ -1,4 +1,4 @@
-# enemy-wave-system
+# wave-spawning
 
 ## Requirements
 * Object Pooling Repo - www.github.com/laurenlizardo/object-pooling
