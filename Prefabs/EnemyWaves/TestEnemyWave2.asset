@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad0831ab88d2d4003bdd3a1cc5961518, type: 3}
+  m_Name: TestEnemyWave2
+  m_EditorClassIdentifier: 
+  WaveFormation: {fileID: 131574642331386648, guid: 650025ea9d7834ea3a230bd3a846fa8a,
+    type: 3}
+  SpawnDelay: 0.5
+  WaveElements:
+  - {fileID: 7946067202435960122, guid: f9401d270acad4296b2761f679c6e8b5, type: 3}
+  - {fileID: 7946067202435960122, guid: f9401d270acad4296b2761f679c6e8b5, type: 3}
+  - {fileID: 977432639614254759, guid: 2f25e2d3d77124f45a334e6b368f6a9a, type: 3}
+  - {fileID: 2304933126574531487, guid: 11cb27f97b72d4bee88e39cdd0b372d0, type: 3}

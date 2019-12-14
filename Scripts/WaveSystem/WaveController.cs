@@ -22,7 +22,7 @@ public abstract class WaveController<T> : MonoBehaviour where T : class
 
   [SerializeField] protected List<T> Waves = new List<T>();
 
-  public int NumberOfEnemies => Enemy.EnemyCount;
+  public int NumberOfEnemies => TestEnemy.EnemyCount;
 
   public abstract IEnumerator SpawnWave();
 }
