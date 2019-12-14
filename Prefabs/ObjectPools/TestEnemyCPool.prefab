@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3039645849094869412}
   - component: {fileID: 9201127445447385223}
   m_Layer: 0
-  m_Name: EnemyCPool
+  m_Name: TestEnemyCPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
