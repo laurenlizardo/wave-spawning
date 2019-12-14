@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
+public abstract class Enemy<T> : MonoBehaviour where T : Component
 {
   public static int EnemyCount;
 
@@ -13,4 +13,6 @@ public abstract class Enemy : MonoBehaviour
   {
     EnemyCount--;
   }
+
+  public abstract ObjectPool<T> ObjectPooler();
 }
