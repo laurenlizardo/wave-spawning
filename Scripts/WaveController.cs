@@ -22,14 +22,14 @@ public class WaveController : MonoBehaviour
 
   public List<EnemyWave> EnemyWaves = new List<EnemyWave>();
 
-  //public int NumberOfEnemies => Enemy.EnemyCount;
+  public int NumberOfEnemies => Enemy.EnemyCount;
 
   private void Update()
   {
     if (Input.GetKeyDown(KeyCode.Space))
     {
       SpawnWave(EnemyWaves[_currentWaveIndex]);
-      //Debug.Log(NumberOfEnemies);
+      Debug.Log(NumberOfEnemies);
     } 
   }
 
@@ -37,9 +37,6 @@ public class WaveController : MonoBehaviour
   {
     for (int i = 0; i < wave.WaveElements.Count; i++)
     {
-      //Instantiate(wave.WaveElements[i], wave.Spawnpoints[i].position, Quaternion.identity); // Works as long as the enemy count doesn't exceed spawnpoints
-      
-      // Access the pool that wave.WaveElements[i] belongs to and dequeue() from there
       GameObject obj = wave.WaveElements[i].NextPoolObject();
       obj.SetActive(true);
     }
