@@ -193,7 +193,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.148e-42, y: 1.2788018e-22, z: 1.47e-43, w: 0.03125}
+  m_BoundingSphereOverride: {x: 1.92e-43, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 335416323}
   - component: {fileID: 335416322}
   m_Layer: 0
-  m_Name: WaveController
+  m_Name: EnemyWaveController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -267,11 +267,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 335416321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9202abbfac44d4979820d06665a0174e, type: 3}
+  m_Script: {fileID: 11500000, guid: d6fa0210c60cd4656ae49af300f5e93d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyWaves:
-  - {fileID: 11400000, guid: ac8a251ddd3da46beb6805f3787596e9, type: 2}
+  Waves:
+  - {fileID: 11400000, guid: 2d511dc0574ea43e1bb5e9c7d1e12de9, type: 2}
   - {fileID: 11400000, guid: b7507e403930547b8aa259e6a4dada7f, type: 2}
   - {fileID: 11400000, guid: ac8a251ddd3da46beb6805f3787596e9, type: 2}
 --- !u!4 &335416323
