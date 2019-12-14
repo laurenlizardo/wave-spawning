@@ -3,6 +3,17 @@ using System.Collections.Generic;
 
 public abstract class ObjectPool<T> : MonoBehaviour where T : Component
 {
+#region Singleton Pattern
+  private static ObjectPool<T>  _instance;
+  public static ObjectPool<T>  Instance => _instance;
+
+  private void Awake()
+  {
+    if (_instance == null) _instance = this;
+    else Destroy(gameObject);
+  }
+#endregion
+
   [SerializeField] private protected T _prefab;
   [SerializeField] private protected int _poolCount;
   [SerializeField] private protected bool _isPoolParent;

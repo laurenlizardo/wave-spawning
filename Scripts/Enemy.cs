@@ -13,4 +13,6 @@ public abstract class Enemy : MonoBehaviour
   {
     EnemyCount--;
   }
+
+  public abstract GameObject NextPoolObject();
 }

@@ -26,6 +26,19 @@ public class WaveController : MonoBehaviour
 
   private void Update()
   {
-    if (Input.GetKey(KeyCode.Space)) Debug.Log(NumberOfEnemies);
+    if (Input.GetKeyDown(KeyCode.Space))
+    {
+      SpawnWave(EnemyWaves[_currentWaveIndex]);
+      Debug.Log(NumberOfEnemies);
+    } 
+  }
+
+  private void SpawnWave(EnemyWave wave)
+  {
+    for (int i = 0; i < wave.WaveElements.Count; i++)
+    {
+      GameObject obj = wave.WaveElements[i].NextPoolObject();
+      obj.SetActive(true);
+    }
   }
 }
