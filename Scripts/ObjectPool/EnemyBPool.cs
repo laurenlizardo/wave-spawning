@@ -1,4 +1,4 @@
-public class EnemyBPool : ObjectPool<EnemyB>
+public class EnemyBPool : GenericObjectPool<EnemyB>
 {
   private void Start()
   {
