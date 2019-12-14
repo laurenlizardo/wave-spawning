@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5078928366638514260}
-  - component: {fileID: 5272393706763757245}
+  - component: {fileID: 977432639614254759}
   m_Layer: 0
-  m_Name: EnemyA
+  m_Name: TestEnemyA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5272393706763757245
+--- !u!114 &977432639614254759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,7 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4762224412750416529}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac2c1365ab4da46fcbc73f160d037d72, type: 3}
+  m_Script: {fileID: 11500000, guid: db13d5becc35c4e538c72f2e35cf5eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5062892333142910445
