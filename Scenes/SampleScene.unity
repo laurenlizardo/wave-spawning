@@ -193,7 +193,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.92e-43, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 1e-45, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -271,11 +271,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 19c87fa1b20ae489aa443d64533c06e7, type: 2}
+  - {fileID: 11400000, guid: f5f3ce019c924420488388ca93fff5fa, type: 2}
+  - {fileID: 11400000, guid: 84f77933a21404640a7dfdcd7b887faf, type: 2}
 --- !u!4 &335416323
 Transform:
   m_ObjectHideFlags: 0
@@ -597,6 +595,22 @@ PrefabInstance:
       propertyPath: Spawnpoint
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9201127445447385223, guid: 9f55aebfe0cc74117970335edca2bd3a,
+        type: 3}
+      propertyPath: _isPoolParent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201127445447385223, guid: 9f55aebfe0cc74117970335edca2bd3a,
+        type: 3}
+      propertyPath: _poolCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201127445447385223, guid: 9f55aebfe0cc74117970335edca2bd3a,
+        type: 3}
+      propertyPath: _prefab
+      value: 
+      objectReference: {fileID: 7946067202435960122, guid: f9401d270acad4296b2761f679c6e8b5,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f55aebfe0cc74117970335edca2bd3a, type: 3}
 --- !u!1001 &4802199064966480319
@@ -671,6 +685,22 @@ PrefabInstance:
       propertyPath: Spawnpoint
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3238053523431826032, guid: 2987e6149562145e6a01302d84201c16,
+        type: 3}
+      propertyPath: _prefab
+      value: 
+      objectReference: {fileID: 2304933126574531487, guid: 11cb27f97b72d4bee88e39cdd0b372d0,
+        type: 3}
+    - target: {fileID: 3238053523431826032, guid: 2987e6149562145e6a01302d84201c16,
+        type: 3}
+      propertyPath: _poolCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238053523431826032, guid: 2987e6149562145e6a01302d84201c16,
+        type: 3}
+      propertyPath: _isPoolParent
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2987e6149562145e6a01302d84201c16, type: 3}
 --- !u!1001 &7842228840460994009
@@ -744,6 +774,22 @@ PrefabInstance:
         type: 3}
       propertyPath: Spawnpoint
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364912927370189654, guid: dad37db1a582647bcbb5bf7c2dfddfd0,
+        type: 3}
+      propertyPath: _prefab
+      value: 
+      objectReference: {fileID: 977432639614254759, guid: 2f25e2d3d77124f45a334e6b368f6a9a,
+        type: 3}
+    - target: {fileID: 2364912927370189654, guid: dad37db1a582647bcbb5bf7c2dfddfd0,
+        type: 3}
+      propertyPath: _poolCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364912927370189654, guid: dad37db1a582647bcbb5bf7c2dfddfd0,
+        type: 3}
+      propertyPath: _isPoolParent
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dad37db1a582647bcbb5bf7c2dfddfd0, type: 3}
