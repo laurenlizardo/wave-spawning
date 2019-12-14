@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad0831ab88d2d4003bdd3a1cc5961518, type: 3}
   m_Name: TestEnemyWave3
   m_EditorClassIdentifier: 
-  WaveFormation: {fileID: 2573337903700709545, guid: f19b0b3ddd93444e9a6dcfb7d88a2571,
+  WaveFormation: {fileID: 8509292184996485188, guid: ffcba1dea0cc84bfa80e11fba54c3d5d,
     type: 3}
   SpawnDelay: 0.5
   WaveElements:
