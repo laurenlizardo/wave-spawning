@@ -1,4 +1,4 @@
-public class TestEnemyCPool : TestGenericObjectPool<TestEnemyC>
+public class TestEnemyCPool : GenericObjectPool<TestEnemyC>
 {
   private void Start()
   {
