@@ -2,11 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class WaveController : MonoBehaviour
+public abstract class WaveController<T> : MonoBehaviour where T : class
 {
 #region Singleton Pattern
-  private static WaveController _instance;
-  public static WaveController Instance => _instance;
+  private static WaveController<T> _instance;
+  public static WaveController<T> Instance => _instance;
 
   private void Awake()
   {
@@ -15,34 +15,14 @@ public class WaveController : MonoBehaviour
   }
 #endregion
 
-  [SerializeField] private int _numberOfWaves => EnemyWaves.Count;
+  [SerializeField] private int _numberOfWaves => Waves.Count;
 
-  private int _currentWaveIndex;
+  private protected int _currentWaveIndex;
   public int CurrentWaveIndex => _currentWaveIndex;
 
-  public List<EnemyWave> EnemyWaves = new List<EnemyWave>();
+  protected List<T> Waves = new List<T>();
 
   public int NumberOfEnemies => Enemy.EnemyCount;
 
-  private void Update()
-  {
-    if (Input.GetKeyDown(KeyCode.Space))
-    {
-      StartCoroutine(SpawnWave(EnemyWaves[_currentWaveIndex]));
-      Debug.Log(NumberOfEnemies);
-    } 
-  }
-
-  private IEnumerator SpawnWave(EnemyWave wave)
-  {
-    for (int i = 0; i < wave.WaveElements.Count; i++)
-    {
-      GameObject obj = wave.WaveElements[i].NextPoolObject();
-      obj.transform.position = wave.Spawnpoints[i].transform.position;
-      obj.transform.rotation = Quaternion.identity;
-      obj.SetActive(true);
-
-      yield return new WaitForSeconds(wave.SpawnDelay);
-    }
-  }
+  public abstract IEnumerator SpawnWave();
 }
