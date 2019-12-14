@@ -20,7 +20,7 @@ public abstract class WaveController<T> : MonoBehaviour where T : class
   private protected int _currentWaveIndex;
   public int CurrentWaveIndex => _currentWaveIndex;
 
-  protected List<T> Waves = new List<T>();
+  [SerializeField] protected List<T> Waves = new List<T>();
 
   public int NumberOfEnemies => Enemy.EnemyCount;
 
