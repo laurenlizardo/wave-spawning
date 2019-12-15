@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class TestEnemyWaveController : WaveController<TestEnemyWave>
+public class TestEnemyWaveController : WaveManager<TestEnemyWave>
 {
   public int WaveIndex;
 

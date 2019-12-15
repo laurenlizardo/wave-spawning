@@ -2,11 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public abstract class WaveController<T> : MonoBehaviour where T : class
+public abstract class WaveManager<T> : MonoBehaviour where T : class
 {
 #region Singleton Pattern
-  private static WaveController<T> _instance;
-  public static WaveController<T> Instance => _instance;
+  private static WaveManager<T> _instance;
+  public static WaveManager<T> Instance => _instance;
 
   private void Awake()
   {
