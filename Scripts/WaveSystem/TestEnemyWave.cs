@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Test Enemy Wave", menuName = "Create New Test Enemy Wave")]
+[CreateAssetMenu(menuName = "Create New TestEnemyWave", fileName = "New TestEnemyWave")]
 public class TestEnemyWave : Wave<TestEnemy>
 {
 

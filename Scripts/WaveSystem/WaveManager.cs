@@ -15,14 +15,10 @@ public abstract class WaveManager<T> : MonoBehaviour where T : class
   }
 #endregion
 
-  [SerializeField] private int _numberOfWaves => Waves.Count;
-
-  private protected int _currentWaveIndex;
-  public int CurrentWaveIndex => _currentWaveIndex;
+  public int CurrentWaveIndex;
+  private protected int _currentWaveIndex => (CurrentWaveIndex > Waves.Count - 1) ? 0 : CurrentWaveIndex;
 
   [SerializeField] protected List<T> Waves = new List<T>();
-
-  public int NumberOfEnemies => TestEnemy.EnemyCount;
 
   public abstract IEnumerator SpawnWave();
 }

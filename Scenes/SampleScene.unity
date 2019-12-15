@@ -270,12 +270,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2799f4279b1ae4c50ab1415c63fcb1c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentWaveIndex: 0
+  CurrentWaveIndex: 0
   Waves:
   - {fileID: 11400000, guid: 19c87fa1b20ae489aa443d64533c06e7, type: 2}
   - {fileID: 11400000, guid: f5f3ce019c924420488388ca93fff5fa, type: 2}
   - {fileID: 11400000, guid: 84f77933a21404640a7dfdcd7b887faf, type: 2}
-  WaveIndex: 0
 --- !u!4 &335416323
 Transform:
   m_ObjectHideFlags: 0
