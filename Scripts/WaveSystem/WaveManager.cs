@@ -20,5 +20,6 @@ public abstract class WaveManager<T> : MonoBehaviour where T : class
 
   [SerializeField] protected List<T> Waves = new List<T>();
 
-  public abstract IEnumerator SpawnWave();
+  public abstract void SpawnWaveElements();
+  public abstract IEnumerator SpawnWaveElementsInOrder();
 }
