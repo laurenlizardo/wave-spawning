@@ -7,7 +7,7 @@ public class TestEnemyWaveManager : WaveManager<TestEnemyWave>
   {
     if (Input.GetKeyDown(KeyCode.Space))
     {
-      StartCoroutine(SpawnWaveElementsInOrder());
+      SpawnWaveElements(); //StartCoroutine(SpawnWaveElementsInOrder());
     } 
   }
 
