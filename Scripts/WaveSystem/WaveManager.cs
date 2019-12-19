@@ -22,4 +22,6 @@ public abstract class WaveManager<T> : MonoBehaviour where T : class
 
   public abstract void SpawnWaveElements();
   public abstract IEnumerator SpawnWaveElementsInOrder();
+
+  public float TimeDelayBeforeWave;
 }
